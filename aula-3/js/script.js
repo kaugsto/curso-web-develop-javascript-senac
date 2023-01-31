@@ -27,8 +27,8 @@ function infodata(){
 
     const tempo = new Date();
     var datacompleta = tempo.toLocaleDateString();
-    var diames = tempo.getDate();
-    var diasemana = tempo.getDay();
+    var diames = tempo.getDate(); //Traz o dia do mês
+    var diasemana = tempo.getDay();  
     var mes = tempo.getMonth();
     var hora = tempo.getHours();
     var minutos = tempo.getMinutes();

@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h1{
+    text-align: center;
+    padding: 50px;
+    font-family: "arial";
+}
+#produto1, #produto2{
+
+    padding: 30px;
+    margin: 20px;
+    background-color:#FFF;
+    box-shadow: 5px 5px 10px #ccc;
+    transition: ease 0.5s;
+}
+#produto1:hover, #produto2:hover{
+
+    background-color: yellow;
+}
+h2{
+    font-family: "arial";   
+}
+p{
+    font-family: "arial";
+    font-weight: bold;
+}
+.p{
+    color: red;
+    font-size: 15pt;
+}
+
+/*Extensão autoprefixer auto corrige CSS ou da para usar o site tbm autoprefixe.com */
