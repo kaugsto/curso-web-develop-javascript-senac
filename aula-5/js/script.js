@@ -20,7 +20,6 @@ function carregarDados (){
     const nome = document.getElementById("nome");
     const idade = document.getElementById("idade");
     const cidade = document.getElementById("cidade");
-
     const prod = document.getElementById("prod");
 
     idade.innerHTML = `<option>Selecione a sua idade</option>`;
