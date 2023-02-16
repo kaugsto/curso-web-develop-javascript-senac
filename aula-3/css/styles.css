@@ -1,0 +1,10 @@
+#foto{
+    width: 30%;
+    height: auto;
+    cursor: pointer;
+    opacity: 0.8;
+    transition: ease .5s;
+}
+#foto:hover{
+    opacity: 1;
+}
