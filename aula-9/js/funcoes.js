@@ -72,7 +72,7 @@ function listarFilmes(){
     });
 }
 
-listarFilmes
+listarFilmes()
 .then((x)=>{
     console.log(x);
 }).catch((e)=>{
