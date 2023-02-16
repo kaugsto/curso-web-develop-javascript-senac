@@ -1,7 +1,7 @@
 //Função que não retorna
 
 var x;
-function soma(array_numeros){
+function soma (array_numeros){
 
     var rs = 0;
     for ( var i =0 ; i < array_numeros.length ; i++){
@@ -56,11 +56,11 @@ const anobissexto = function (ano){
     }
 };
 
-const paletaCores = function(linha,coluna){
+const paletaCores = function (linha,coluna){
 
     var tabela = "<table>";
     
-}   
+  
 
 for (var lin = 0; lin < linha; lin++){
     
@@ -69,8 +69,13 @@ for (var lin = 0; lin < linha; lin++){
         var red = Math.round (1 + Math.random() * 254);
         var green = Math.round (1 + Math.random() * 254);
         var blue = Math.round (1 + Math.random() * 254);
-        tabela += `<td style ='background-color=rgb(${red},${green},${blue})'>_</td>`;
+        tabela += `<td onclick = mudar('rgb(${red},${green},${blue})') style ='background-color:rgb(${red},${green},${blue})'>_</td>`;
     }
     tabela += "</tr>";
 }
 return tabela;
+}
+
+function mudar (cor) {
+window.document.body.style.backgroundColor = cor;
+}

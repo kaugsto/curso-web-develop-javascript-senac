@@ -2,8 +2,8 @@ window.document.body.onload = function(){
     //Vamos chamar a função soma com a passagem de 
     //numeros de um array
 
-    var numeros = [10, 30, 5, 8, 20];
-    soma(numeros);
+    // var numeros = [10, 30, 5, 8, 20];
+    // soma(numeros);
 
     // var valores = prompt("Digite números separados por vírgula");
     
@@ -41,7 +41,7 @@ window.document.body.onload = function(){
     // inputNome.value = anobissexto(ano);
 
 // console.log (Math.round (1 + Math.random() * 254));
-window.document.body.innerHTML = paletaCores (10,20);
+window.document.body.innerHTML = paletaCores (50,30);
 console.log(paletaCores(0,0));
 
 };
