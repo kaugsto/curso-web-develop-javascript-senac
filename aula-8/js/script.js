@@ -1,4 +1,4 @@
-window.document.body.onload = function(){
+window.document.body.onload = function (){
     //Vamos chamar a função soma com a passagem de 
     //numeros de um array
 
