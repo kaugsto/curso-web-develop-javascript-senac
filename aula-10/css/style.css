@@ -1,0 +1,57 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+}
+
+#quadro{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    position: relative;
+    margin: 0 auto;
+    cursor: pointer; 
+    
+}
+
+#fundo{
+    background-color: rgba(0,0,0,0);
+    width: 100vw;
+    height: 100vh;
+    padding-top: 100px;
+    transition: ease 1s;
+}
+
+#tela{
+    background-color: rgb(255,255,255);
+    border-radius: 20px;
+    width:50%;
+    height: 400px;
+    margin: auto;
+    padding:10px;
+    box-shadow: 5px 5px 10px gray;
+    position: relative;
+    top: -600px;
+    transition: ease 1s;
+}
+#fechar{
+    position:absolute;
+    right: 0px;
+    top:0px;
+    padding: 5px;
+    background-color:  darkgray;
+    border-top-right-radius: 30%;
+    text-align: center;
+    width: 80px;
+    z-index: 0;
+}
+a{
+    color: white;
+    font-size: 12pt;
+    text-decoration: none;
+}
