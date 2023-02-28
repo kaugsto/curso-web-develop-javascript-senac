@@ -1,0 +1,21 @@
+*{
+    margin: 0;
+    box-sizing: border-box; /*Elimina a barra de movimentar a tela*/
+}
+body{
+    width: 100vw;;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding: 150px;
+    /* justify-content: center; */
+    align-items: center; /*Alinha na horizontal*/
+}
+
+#div{
+    width: 250px;
+    height: 250px;
+    background-color: black;
+    border-radius: 10px;
+    border: 2px black solid;
+}
