@@ -5,6 +5,7 @@
 }
 body{   
     background-color: rgb(56, 56, 211);
+    transition: ease 1.5s;
 }
 nav{
     width: 200px;

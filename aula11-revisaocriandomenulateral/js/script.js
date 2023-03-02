@@ -15,9 +15,11 @@ fechar.onclick = ()=>{ //Atribuindo um evento + uma função (anônima e arrow) 
     if (document.querySelector("nav").style.left == "0px"){
         document.querySelector("nav").style.left ="-200px";
         document.querySelector("#fechar").innerHTML = "&equiv;";
+        document.querySelector("body").style.backgroundColor = "rgb(56, 56, 211)";
     }else{
         document.querySelector("nav").style.left = "0px";
         document.querySelector("#fechar").innerHTML = "&times;";
+        document.querySelector("body").style.background = "darkblue";
     }
 }
 
