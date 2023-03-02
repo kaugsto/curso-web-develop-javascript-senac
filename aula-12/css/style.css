@@ -1,0 +1,177 @@
+html{
+    scroll-behavior: smooth; /*Desliza*/
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.nav{
+    background-color: black;
+    padding: 50px 10px 0px 20px; /* sequência do relógio top, direita, embaixo, esquerda*/
+    height: 100vh;
+    width: 200px;
+    position: fixed;
+    top: 0px;
+    left: -200px;
+    transition: ease 1s;
+}
+.nav ul{
+    list-style: none;/*Retira os marcadores*/
+}
+.nav ul li{
+    margin-bottom: 10px;
+    padding: 5px;
+}
+.nav ul li a{
+    font-family: arial;
+    font-size: 15pt;
+    color: rgb(255, 255, 255);
+    text-decoration: none; /*Retira o sublinhado*/
+}
+.nav ul li:hover{ /*Cria uma "sombra" quando passar o mouse*/
+    background-color: rgba(200,200,200,0.3)
+}
+#af{
+    color: white; /*Cor da letra*/
+    background-color: red;
+    padding: 10px;
+    text-decoration: none;
+    font-size: 15pt;
+    position: absolute;
+    left: 200px;
+    top: 0px;
+}
+section{
+    margin: 100px 50px;
+    text-align: justify;
+    line-height: 20px;
+}
+#conteudo{
+    opacity: 0;
+    transition: ease 1s;
+
+}
+#carregando{
+    position: fixed;
+    z-index: 10000;
+    width: 100vw;
+    height: 100vh;
+    text-align: center;
+    padding-top: 5%;
+    background-color:white;
+    opacity: 1;
+    transition: ease 0.5s;
+    top: 0px;
+    left: 0px;
+}
+.caixa{
+    display: flex;
+    flex-direction: row;
+    margin: 20px;
+    width: 50%;
+    transition: ease 0.5s;
+}
+.caixa .textos{
+    margin: 20px;
+    border: 1px dotted silver;
+}
+.caixa img{
+    width: 200px;
+    height: 270px;
+
+}
+.caixa .textos h2{
+    font-family: arial;
+    font-size: 25pt;
+}
+.caixa .textos .sinopse{
+    font-family: arial;
+    font-size: 12pt;
+    text-align: justify;
+    line-height: 24pt;
+}
+
+.caixa:hover{
+    background-color: rgb(0,0,0,0.9);
+    color: white !important; /*Comando important serve para indicar relevância */
+    margin-left: 100px;
+    cursor: pointer;
+}
+#paginacao{
+    padding: 10px;
+    text-align: center;
+    background-color: silver;
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    width: 100vw;
+}
+.pag{
+    text-align: center;
+    padding: 20px;
+}
+.pag ul{
+    list-style: none;
+}
+.pag li {
+    display: inline-block;
+    padding: 5px;
+    margin: 5px;
+}
+.pag li a {
+    font-family: verdana;
+    font-size: 12pt;
+    color: brown;
+    font-weight: bold;
+    text-decoration: none;
+    transition: ease 0.5s;
+    padding: 10px;
+}
+.pag li a:hover{
+    /* border-radius: 50%;
+    transform: rotate(360deg);
+    transform: scale(1.1); */
+    background-color: black;
+}
+#fundo{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.8); /*0.8 = 80% de visibilidade*/
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    z-index: 11000;
+    opacity: 0;
+    display: none;
+}
+#exibir{
+    background-color: aliceblue;
+    width: 50vw;
+    height:40vh;
+    margin: 10% auto;
+    /* border-top-right-radius: 15px;
+    border-bottom-left-radius: 15px; */
+    border-radius: 15px;
+    margin-top: -400px;
+    transition: ease 1.5s;
+}
+#fechar{
+    position: relative;
+    left: 690px;
+    top: 10px;
+    background-color: red;
+    padding: 10px;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+}
+/* #exibirImagem img{
+    width: 100%;
+    height: 100%;
+    
+} */
