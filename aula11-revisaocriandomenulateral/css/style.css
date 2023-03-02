@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{   
+    background-color: rgb(56, 56, 211);
+}
+nav{
+    width: 200px;
+    height: 100vh;
+    border: 1px solid black;
+    padding: 50px 10px 0px 20px;
+    background-color: rgb(148, 145, 145);
+    color: white;
+    position: fixed;
+    top: 0;
+    left: -200px; /*-200 para esconder a tag nav*/
+    transition: ease 1.5s;
+
+}
+nav ul {
+    list-style: none;
+
+}
+nav ul li{
+    padding: 5px;
+    margin-bottom: 10px;
+    font-family: arial;
+    font-size: 15pt;
+}
+
+nav ul li:hover{
+    background-color:black;
+}
+#fechar{
+    background-color:red;
+    border: 1px black solid;
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    font-size: 15pt;
+    /*ENTENDENDO COMANDO ABSOLUTE*/
+    /*Este comando qdo aplicado ele sai da ordem natural do HTML ou seja ele fica acima dos outros elementos
+    é como se ele saísse da fila. Quando indicamos uma posição (top, left, right or bottom) é sempre em relação 
+    a página HTML.*/
+    position: absolute;
+    left: 200px; 
+    top: 0px;
+    text-transform: none;
+}
